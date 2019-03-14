@@ -1,0 +1,26 @@
+#include <iomanip>
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double num1, num2, num3, num4, num5, sum, average, conversion;
+	
+	cout << "enter five decimal:" << endl;
+	cin >> num1 >> num2 >> num3 >> num4 >> num5;
+
+	sum = num1 + num2 + num3 + num4 + num5;
+	cout <<endl<< "sum:" << sum << endl;
+	average = sum/5;
+	cout << "Average:" << average << endl;
+	
+	cout << "conversion" << static_cast<int> (num1) << endl;
+	cout << "conversion" << static_cast<int> (num2) << endl;
+	cout << "conversion" << static_cast<int> (num3) << endl;
+	cout << "conversion" << static_cast<int> (num4) << endl;
+	cout << "conversion" << static_cast<int> (num5) << endl;
+	_getch();
+    return 0;
+}
